@@ -1,6 +1,10 @@
 // hello world -> Hello world
 function capitalize(str) {
-    //  First Character
+    // If empty string, return empty string
+    if (str.length === 0) {
+        return str
+    }
+    // First Character
     const firstChr = str[0]
     // Change the first character to upper case
     const upperCase = firstChr.toUpperCase()
@@ -50,7 +54,7 @@ function kebobCase(str, separator = '-') {
             return true
         } else if (code > 47 && code < 58) { // keep numbers
             return true
-        } else if (code === 32 || code === separator.charCodeA(0)) { // keep hyphen
+        } else if (code === 32 || code === 45) { // keep hyphen
             return true
         }
         return false
@@ -99,7 +103,7 @@ function shift(str, shiftNum = 1) {
         }
     })
     const Chrs = numChrs.join('') 
-    const slicedWord = str.slice(shiftNum) // ello World
+    const slicedWord = str.slice(shiftNum).trim() // ello World
     return slicedWord + Chrs
 }
 
@@ -146,3 +150,15 @@ function isEmpty(str) {
 }
 
 console.log(isEmpty(' \tAbc def'))
+
+module.exports.capitalize = capitalize
+module.exports.allCaps = allCaps
+module.exports.capitalizeWords = capitalizeWords
+module.exports.removeExtraSpaces = removeExtraSpaces
+module.exports.kebobCase = kebobCase
+module.exports.snakeCase = snakeCase
+module.exports.camelCase = camelCase
+module.exports.shift = shift
+module.exports.makeHashTag = makeHashTag
+module.exports.isEmpty = isEmpty
+
