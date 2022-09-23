@@ -112,7 +112,7 @@ console.log(shift('foobar', 3))
 
 // Amazing bongo drums for sale -> ['#amazing', '#bongo', '#drums']
 function makeHashTag(str) {
-    lowerWords = str.toLowerCase()
+    const lowerWords = str.toLowerCase()
     const splitWords = lowerWords.split(' ')
     const wordsList = []
     if (splitWords.length > 3) {
