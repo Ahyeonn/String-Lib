@@ -10,11 +10,11 @@ function isEmpty(str) {
     var splitChrs = trimmedWords.split('');
     for (var _i = 0, splitChrs_1 = splitChrs; _i < splitChrs_1.length; _i++) {
         var chr = splitChrs_1[_i];
-        if (chr != ' ' && chr != '\t') {
+        if (chr != ' ' && chr != '\n' && chr != '\t') {
             return false;
         }
-        return true;
     }
+    return true;
 }
 exports.isEmpty = isEmpty;
 console.log(isEmpty(' \tAbc def'));
