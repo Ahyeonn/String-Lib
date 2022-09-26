@@ -142,7 +142,7 @@ function isEmpty(str) {
     }
     const splitChrs = trimmedWords.split('')
     for (chr of splitChrs) {
-        if ( chr !== ' ' || chr !== '\n', chr !== '\t'  ) {
+        if ( chr !== ' ' && chr !== '\n' && chr !== '\t'  ) {
             return false
         }
     }
