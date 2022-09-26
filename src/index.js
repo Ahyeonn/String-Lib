@@ -145,8 +145,8 @@ function isEmpty(str) {
         if ( chr !== ' ' || chr !== '\n', chr !== '\t'  ) {
             return false
         }
-        return true
     }
+    return true
 }
 
 console.log(isEmpty(' \tAbc def'))
