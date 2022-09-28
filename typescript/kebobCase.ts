@@ -1,4 +1,4 @@
-import {removeExtraSpaces} from './removeExtraSpaces.js'
+import {removeExtraSpaces} from './removeExtraSpaces'
 
 // Hello world -> hello-world
 function kebobCase(str: string, separator: string = '-'): string {

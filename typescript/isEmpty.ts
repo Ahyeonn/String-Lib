@@ -13,7 +13,7 @@ function isEmpty(str: string): boolean {
     return true
 }
 
-console.log(isEmpty(' \tAbc def'))
+// console.log(isEmpty(' \tAbc def'))
 
 export {
     isEmpty

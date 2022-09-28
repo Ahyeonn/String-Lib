@@ -1,4 +1,4 @@
-import {capitalize} from './capitalize.js'
+import {capitalize} from './capitalize'
 
 // do all the things -> Do All The Things
 function capitalizeWords(str: string): string {
